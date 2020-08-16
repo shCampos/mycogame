@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './App.css';
-
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Card, CardActions, CardContent, Button } from '@material-ui/core';
 import useWindowDimensions from './assets/scripts/useWindowDimensions.js';
+
+import Orquestrador from './components/Orquestrador.js';
 
 function App() {
   const { height, width } = useWindowDimensions();
@@ -12,8 +12,8 @@ function App() {
     root: {
       padding: '0px',
       margin: '0px',
-      width: width,
-      height: height,
+      width: '100%',
+      height: '100vh',
       backgroundColor: '#0A1041'
     },
     card: {
@@ -25,8 +25,8 @@ function App() {
 
   return (
     <div className={classes.root}>
-      {isReady ? (
-        <Grid  container spacing={0} alignItems="center" justify="center"
+      {!isReady ? (
+        <Grid container spacing={0} alignItems="center" justify="center"
         style={{ minHeight: height }}>
           <Grid item xs={3}>
             <Card className={classes.card}>
@@ -36,13 +36,13 @@ function App() {
               Vamos nessa!
               </CardContent>
               <CardActions>
-                <Button className={classes.button} onClick={() => setIsReady(false)}>COMEÇAR</Button>
+                <Button className={classes.button} onClick={() => setIsReady(true)}>COMEÇAR</Button>
               </CardActions>
             </Card>
           </Grid>
         </Grid>
       ) : (
-        <p>asbashio</p>
+        <Orquestrador/>
       )}
     </div>
   );
