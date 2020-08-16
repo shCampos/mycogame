@@ -1,0 +1,17 @@
+{
+  "tipo": "coletar",
+  "nome": "Itens de sobrevivência para saída de campo",
+  "enunciado": "Marque os itens de sobrevivência para a saída de hoje",
+  "opções": [
+    {"label": "Refrigerante", "icon": null, "value": false},
+    {"label": "Querosene", "icon": null, "value": false},
+    {"label": "Arma de fogo", "icon": null, "value": false},
+    {"label": "Linha de nylon", "icon": null, "value": false},
+    {"label": "Gelo", "icon": null, "value": false},
+    {"label": "Água", "icon": null, "value": true},
+    {"label": "Anti-alérgico", "icon": null, "value": true},
+    {"label": "Alimentos leves", "icon": null, "value": true},
+    {"label": "Repelente", "icon": null, "value": true},
+    {"label": "Facão", "icon": null, "value": true}
+  ]
+}

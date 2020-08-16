@@ -1,0 +1,17 @@
+{
+  "tipo": "coletar",
+  "nome": "Preparação de EPI",
+  "enunciado": "Marque os EPI que você deve usar na coleta de campo:",
+  "opções": [
+    {"label": "Jaleco", "icon": null, "value": false},
+    {"label": "Calçado fechado", "icon": null, "value": true},
+    {"label": "Calça comprida", "icon": null, "value": true},
+    {"label": "Batom", "icon": null, "value": false},
+    {"label": "Camisa de manga comprida", "icon": null, "value": true},
+    {"label": "Propé", "icon": null, "value": false},
+    {"label": "Chapéu ou Boné", "icon": null, "value": true},
+    {"label": "Protetor Solar", "icon": null, "value": true},
+    {"label": "Capa de chuva", "icon": null, "value": true},
+    {"label": "Perneiras", "icon": null, "value": true}
+  ]
+}
